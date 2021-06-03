@@ -6,25 +6,25 @@ import { SubTitle, Title } from '../';
 
 interface Props {
   style?: StyleProp<ViewStyle>,
+  imageStyle?: StyleProp<ViewStyle>,
+  item: {
+    title: string,
+    thumbnail: string,
+    desc: string,
+  }
 };
 
-
-const BlockCard: React.FC<Props> = ({ style }) => {
+// [style.container, style]
+const BlockCard: React.FC<Props> = ({ style, imageStyle, item }) => {
   return (
     <Container style={style}>
-      <ImageFeaturedNews source={imgTest} />
+      <ImageFeaturedNews source={{ uri: item.thumbnail }} style={imageStyle} />
       <ContentContainer>
         <Title>
-          Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy
-          text ever since the 1500s,
+          {item.title}
         </Title>
         <SubTitle>
-          Lorem Ipsum is simply dummy text of
-          the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s,
+          {item.desc}
         </SubTitle>
       </ContentContainer>
     </Container>
