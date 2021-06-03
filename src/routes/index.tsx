@@ -10,7 +10,7 @@ export default function App() {
     <HomeNavigation.Navigator
       screenOptions={{
         headerShown: false,
-        cardStyle: { backgroundColor: '#fff' }
+        cardStyle: { backgroundColor: '#ffffff3d' }
       }}
     >
       <HomeNavigation.Screen name="Home" component={Home} />
