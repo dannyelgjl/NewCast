@@ -8,6 +8,7 @@ import {
   FlatCard,
   PoliticalNews,
   EntertainmentNews,
+  NewsDetail,
 } from '../../components';
 import { Container } from './styles';
 import data from '../../services/news';
@@ -21,15 +22,17 @@ const News = () => {
   const entertainmentNews = data.filter(item => item.category === 'entertainment');
 
   return (
-    <Container>
-      <SearchBar />
-      <FeatureNews item={news} />
-      <BreakingNews data={breakingNews} />
-      <PoliticalNews data={politicalNews} />
-      <TechNews data={techNews} />
-      <FlatCard item={techNews1} />
-      <EntertainmentNews data={entertainmentNews} />
-    </Container>
+    // <Container>
+    //   <SearchBar />
+    //   <FeatureNews item={news} />
+    //   <BreakingNews data={breakingNews} />
+    //   <PoliticalNews data={politicalNews} />
+    //   <TechNews data={techNews} />
+    //   <FlatCard item={techNews1} />
+    //   <EntertainmentNews data={entertainmentNews} />
+
+    // </Container>
+    <NewsDetail />
   )
 }
 
