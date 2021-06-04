@@ -12,7 +12,6 @@ export default function App() {
     <StackNavigation.Navigator
       screenOptions={{
         headerShown: false,
-        cardStyle: { backgroundColor: '#ffffff3d' },
         cardStyleInterpolator: ({ index, current, next, layouts: { screen } }) => {
           const translateX = current.progress.interpolate({
             inputRange: [index - 1, index, index + 1],
@@ -24,7 +23,13 @@ export default function App() {
             outputRange: [1, 0, 0],
           });
 
-          return { cardStyle: { opacity, transform: [{ translateX }] } };
+          return {
+            cardStyle: {
+              opacity,
+              transform: [{ translateX }],
+              backgroundColor: '#ffffff3d'
+            }
+          };
         },
       }}
     >
