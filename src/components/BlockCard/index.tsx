@@ -19,7 +19,7 @@ interface Item {
 
 
 const BlockCard: React.FC<Props> = ({ style, imageStyle, item }) => {
-  console.log(item);
+  console.log("ITEM", item);
   return (
     <Container style={style}>
       <ImageFeaturedNews source={{ uri: item?.thumbnail }} style={imageStyle} />

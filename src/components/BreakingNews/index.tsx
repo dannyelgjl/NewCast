@@ -2,13 +2,15 @@ import React from 'react';
 import { HorizontalList } from '../';
 
 interface Props {
-  data: {
-    id: string;
-    title: string;
-    desc: string;
-    thumbnail: string;
-    category: string;
-  }[],
+  data: Data[],
+}
+
+interface Data {
+  id: string;
+  title: string;
+  desc: string;
+  thumbnail: string;
+  category: string;
 }
 
 const BreakingNews: React.FC<Props> = ({ data }) => {
