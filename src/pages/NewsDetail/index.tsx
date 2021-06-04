@@ -1,8 +1,8 @@
 import React from 'react';
-import { HorizontalList } from '../../components';
+import { HorizontalList, Close } from '../../components';
 import { Dimensions, StyleProp, ViewStyle } from 'react-native';
 import { Container, Content, Description, ImageDetail, Title, RelatedPost } from './styles';
-import { useRoute, RouteProp } from '@react-navigation/core';
+import { useRoute, RouteProp, useNavigation } from '@react-navigation/core';
 import { relatedPosts } from '../../services/news';
 
 const { width } = Dimensions.get('window');
@@ -24,23 +24,25 @@ type StackParamsList = {
 }
 
 const NewsDetail: React.FC = () => {
+  const { navigate } = useNavigation();
   const route = useRoute<RouteProp<StackParamsList, 'NewsDetail'>>();
   const { desc, thumbnail, title } = route.params.item;
 
-  console.log(title)
-
   // const { title, desc, thumbnail } = props.route.params.item;
   return (
-    <Container>
-      <ImageDetail style={style} source={{ uri: thumbnail }} />
-      <Content>
-        <Title>{title}</Title>
-        <Description>{desc}</Description>
-      </Content>
-      <RelatedPost>
-        <HorizontalList title="Notícias Relacionadas" data={relatedPosts} />
-      </RelatedPost>
-    </Container>
+    <>
+      <Container>
+        <ImageDetail style={style} source={{ uri: thumbnail }} />
+        <Content>
+          <Title>{title}</Title>
+          <Description>{desc}</Description>
+        </Content>
+        <RelatedPost>
+          <HorizontalList title="Notícias Relacionadas" data={relatedPosts} />
+        </RelatedPost>
+      </Container>
+      <Close onPress={() => navigate('Home')} />
+    </>
   );
 }
 

@@ -6,11 +6,22 @@ import NewsList from '../pages/NewsList'
 
 const StackNavigation = createStackNavigator();
 
-
 export default function App() {
   return (
     <StackNavigation.Navigator
       screenOptions={{
+        headerTransparent: true,
+        headerTitle: '',
+        headerTintColor: 'white',
+        headerLeftContainerStyle: {
+          width: 40,
+          height: 40,
+          borderRadius: 20,
+          backgroundColor: 'rgba(92, 90, 91, 0.7)',
+          alignItems: 'center',
+          marginLeft: 10,
+          marginTop: 8,
+        },
         cardStyleInterpolator: ({ index, current, next, layouts: { screen } }) => {
           const translateX = current.progress.interpolate({
             inputRange: [index - 1, index, index + 1],
@@ -32,9 +43,13 @@ export default function App() {
         },
       }}
     >
-      <StackNavigation.Screen name="Home" component={Home} />
       <StackNavigation.Screen
         options={{ headerShown: false }}
+        name="Home"
+        component={Home}
+      />
+
+      <StackNavigation.Screen
         name="NewsDetail"
         component={NewsDetail}
       />

@@ -3,20 +3,8 @@ import { Title } from '../';
 import SmallCard from '../SmallCard';
 import { FlatList } from 'react-native';
 import { ListStyle } from './styles';
+import { Props } from './types';
 
-interface Props {
-  title?: string;
-  data: {
-    id: string;
-    title: string;
-    desc: string;
-    thumbnail: string;
-    category: string;
-  }[],
-  item?: {
-    id?: string;
-  };
-}
 
 const HorizontalList: React.FC<Props> = ({ title, data }) => {
   return (

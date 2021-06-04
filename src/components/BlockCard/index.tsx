@@ -1,22 +1,8 @@
 import React from 'react';
-import imgTest from '../../assets/x1.jpeg';
-import { ViewStyle, StyleProp, View, TouchableWithoutFeedback, TouchableOpacity } from 'react-native';
+import { TouchableOpacity } from 'react-native';
 import { Container, ImageFeaturedNews, ContentContainer } from './styles';
 import { SubTitle, Title } from '../';
-
-interface Props {
-  style?: StyleProp<ViewStyle>;
-  imageStyle?: StyleProp<ViewStyle>;
-  item?: Item;
-  onPress?(): void,
-};
-
-interface Item {
-  id?: string;
-  title?: string;
-  desc?: string;
-  thumbnail?: string;
-}
+import { Props } from './types';
 
 
 const BlockCard: React.FC<Props> = ({ style, imageStyle, item, onPress }) => {

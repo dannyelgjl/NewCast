@@ -13,3 +13,4 @@ export { default as PoliticalNews } from './PoliticalNews';
 export { default as EntertainmentNews } from './EntertainmentNews';
 export { default as ViewMore } from './ViewMore';
 export { default as VerticalCard } from './VerticalCard';
+export { default as Close } from './Close';

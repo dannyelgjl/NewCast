@@ -1,5 +1,8 @@
+import { ViewStyle, StyleProp } from 'react-native';
 
 export interface Props {
+  style?: StyleProp<ViewStyle>;
+  imageStyle?: StyleProp<ViewStyle>;
   item?: Item;
   onPress?(): void,
 };
