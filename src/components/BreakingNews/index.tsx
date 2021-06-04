@@ -16,7 +16,7 @@ interface Data {
 const BreakingNews: React.FC<Props> = ({ data }) => {
 
   return (
-    <HorizontalList title="Breaking News" data={data} />
+    <HorizontalList title="Últimas notícias" data={data} />
   );
 }
 

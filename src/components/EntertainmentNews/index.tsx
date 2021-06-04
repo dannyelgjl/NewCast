@@ -17,7 +17,7 @@ interface Data {
 
 const EntertainmentNews: React.FC<Props> = ({ data }) => {
   return (
-    <VerticalList title="Entertainment News" data={data} />
+    <VerticalList title="Entretenimento" data={data} />
   );
 }
 

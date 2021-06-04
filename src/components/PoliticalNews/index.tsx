@@ -17,7 +17,7 @@ interface Data {
 
 const PoliticalNews: React.FC<Props> = ({ data }) => {
   return (
-    <VerticalList title="Political News" data={data} />
+    <VerticalList title="Política" data={data} />
   );
 }
 
