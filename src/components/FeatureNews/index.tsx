@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlockCard } from '../';
+import { BlockCard, HorizontalList } from '../';
 import { StyleProp, ViewStyle } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
@@ -19,7 +19,7 @@ const FeatureNews: React.FC<Props> = ({ item }) => {
     <BlockCard
       item={item}
       style={{ marginVertical: 15 }}
-      onPress={() => navigate('NewDetail', { item })}
+      onPress={() => navigate('NewsDetail', { item })}
     />
   );
 }

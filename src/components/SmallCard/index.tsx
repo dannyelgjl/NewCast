@@ -1,6 +1,7 @@
 import React from 'react';
 import { BlockCard, ViewMore } from '../';
 import { StyleProp, ViewStyle, Dimensions } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { Props } from './types';
 
 const { width } = Dimensions.get('window');
@@ -22,12 +23,19 @@ const viewMoreStyle: StyleProp<ViewStyle> = {
 }
 
 const SmallCard: React.FC<Props> = ({ item }) => {
+  const { navigate } = useNavigation();
+
   if (item.type === 'viewMore') {
     return <ViewMore style={viewMoreStyle} />;
   }
 
   return (
-    <BlockCard item={item} style={style} imageStyle={imageStyle} />
+    <BlockCard
+      item={item}
+      style={style}
+      imageStyle={imageStyle}
+      onPress={() => navigate('NewsDetail', { item })}
+    />
   );
 }
 

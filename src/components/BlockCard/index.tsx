@@ -1,6 +1,6 @@
 import React from 'react';
 import imgTest from '../../assets/x1.jpeg';
-import { ViewStyle, StyleProp, View, TouchableWithoutFeedback } from 'react-native';
+import { ViewStyle, StyleProp, View, TouchableWithoutFeedback, TouchableOpacity } from 'react-native';
 import { Container, ImageFeaturedNews, ContentContainer } from './styles';
 import { SubTitle, Title } from '../';
 
@@ -21,7 +21,7 @@ interface Item {
 
 const BlockCard: React.FC<Props> = ({ style, imageStyle, item, onPress }) => {
   return (
-    <TouchableWithoutFeedback onPress={onPress}>
+    <TouchableOpacity onPress={onPress}>
       <Container style={style}>
         <ImageFeaturedNews source={{ uri: item?.thumbnail }} style={imageStyle} />
         <ContentContainer>
@@ -33,7 +33,7 @@ const BlockCard: React.FC<Props> = ({ style, imageStyle, item, onPress }) => {
           </SubTitle>
         </ContentContainer>
       </Container>
-    </TouchableWithoutFeedback>
+    </TouchableOpacity>
   );
 }
 

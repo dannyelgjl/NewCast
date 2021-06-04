@@ -1,6 +1,5 @@
 import React from 'react';
-import imgTest from '../../assets/x1.jpeg';
-import { HorizontalList } from '../';
+import { HorizontalList } from '../../components';
 import { Dimensions, StyleProp, ViewStyle } from 'react-native';
 import { Container, Content, Description, ImageDetail, Title, RelatedPost } from './styles';
 import { useRoute, RouteProp } from '@react-navigation/core';

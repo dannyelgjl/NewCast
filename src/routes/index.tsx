@@ -1,8 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../pages/Home';
-import Detail from '../pages/Detail';
-import NewDetail from '../components/NewsDetail';
+import NewsDetail from '../pages/NewsDetail';
+import NewsList from '../pages/NewsList'
 
 const StackNavigation = createStackNavigator();
 
@@ -35,10 +35,10 @@ export default function App() {
       <StackNavigation.Screen name="Home" component={Home} />
       <StackNavigation.Screen
         options={{ headerShown: false }}
-        name="Detail"
-        component={Detail}
+        name="NewsDetail"
+        component={NewsDetail}
       />
-      <StackNavigation.Screen options={{ headerShown: false }} name="NewDetail" component={NewDetail} />
+      <StackNavigation.Screen name="NewsList" component={NewsList} />
     </StackNavigation.Navigator>
   );
 }
