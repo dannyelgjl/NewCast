@@ -18,7 +18,7 @@ interface Props {
 
 const FeatureNews: React.FC<Props> = ({ item }) => {
   return (
-    <BlockCard item={item} style={style} />
+    <BlockCard item={item} style={{ marginVertical: 15 }} />
   );
 }
 
