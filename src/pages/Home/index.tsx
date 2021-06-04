@@ -9,6 +9,7 @@ import {
   PoliticalNews,
   EntertainmentNews,
   NewsDetail,
+  NewsList,
 } from '../../components';
 import { Container } from './styles';
 import data from '../../services/news';
@@ -32,7 +33,7 @@ const News = () => {
     //   <EntertainmentNews data={entertainmentNews} />
 
     // </Container>
-    <NewsDetail />
+    <NewsList />
   )
 }
 
