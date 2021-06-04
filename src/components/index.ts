@@ -10,5 +10,5 @@ export { default as TechNews } from './TechNews';
 export { default as FlatCard } from './FlatCard';
 export { default as VerticalList } from './VerticalList';
 export { default as PoliticalNews } from './PoliticalNews';
-
+export { default as EntertainmentNews } from './EntertainmentNews';
 
