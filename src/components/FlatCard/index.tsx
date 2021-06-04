@@ -3,10 +3,13 @@ import { Container, ImageFeaturedNews, ContentContainer } from './styles';
 import { SubTitle, Title } from '../';
 import { Props } from './types';
 import { TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/core';
 
-const FlatCard: React.FC<Props> = ({ item, onPress }) => {
+const FlatCard: React.FC<Props> = ({ item }) => {
+  const { navigate } = useNavigation();
+
   return (
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity onPress={() => navigate('NewsDetail', { item })}>
       <Container>
         <ImageFeaturedNews source={{ uri: item?.thumbnail }} />
         <ContentContainer>
