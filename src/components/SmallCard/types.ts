@@ -6,4 +6,5 @@ export interface Item {
   title?: string;
   desc?: string;
   thumbnail?: string;
+  type?: string;
 }
