@@ -5,26 +5,30 @@ import { Container, ImageFeaturedNews, ContentContainer } from './styles';
 import { SubTitle, Title } from '../';
 
 interface Props {
-  style?: StyleProp<ViewStyle>,
-  imageStyle?: StyleProp<ViewStyle>,
-  item: {
-    title: string,
-    thumbnail: string,
-    desc: string,
-  }
+  style?: StyleProp<ViewStyle>;
+  imageStyle?: StyleProp<ViewStyle>;
+  item?: Item;
 };
 
-// [style.container, style]
+interface Item {
+  id?: string;
+  title?: string;
+  desc?: string;
+  thumbnail?: string;
+}
+
+
 const BlockCard: React.FC<Props> = ({ style, imageStyle, item }) => {
+  console.log(item);
   return (
     <Container style={style}>
-      <ImageFeaturedNews source={{ uri: item.thumbnail }} style={imageStyle} />
+      <ImageFeaturedNews source={{ uri: item?.thumbnail }} style={imageStyle} />
       <ContentContainer>
         <Title>
-          {item.title}
+          {item?.title}
         </Title>
         <SubTitle>
-          {item.desc}
+          {item?.desc}
         </SubTitle>
       </ContentContainer>
     </Container>

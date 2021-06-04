@@ -4,6 +4,7 @@ export { default as SubTitle } from './SubTitle';
 export { default as Title } from './Title';
 export { default as FeatureNews } from './FeatureNews';
 export { default as SmallCard } from './SmallCard';
-
+export { default as HorizontalList } from './HorizontalList';
+export { default as BreakingNews } from './BreakingNews';
 
 

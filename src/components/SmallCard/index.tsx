@@ -1,23 +1,24 @@
 import React from 'react';
 import { BlockCard } from '../';
 import { StyleProp, ViewStyle, Dimensions } from 'react-native';
-
-// import { Container } from './styles';
+import { Props } from './types';
 
 const { width } = Dimensions.get('window');
 
 const style: StyleProp<ViewStyle> = {
   width: width / 2,
-  height: 200,
   marginRight: 15,
+  height: 200,
 }
 
 const imageStyle: StyleProp<ViewStyle> = {
-  height: 200,
+  height: 100,
 }
 
 
-const SmallCard: React.FC = ({ item }: any) => {
+
+
+const SmallCard: React.FC<Props> = ({ item }) => {
   return (
     <BlockCard item={item} style={style} imageStyle={imageStyle} />
   );
