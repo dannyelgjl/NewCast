@@ -1,16 +1,16 @@
 import React from 'react';
+import { TouchableOpacity } from 'react-native';
+import { Props } from './types';
+
 import { Container, Text } from './styles';
-import { ViewStyle, StyleProp } from 'react-native';
 
-interface Props {
-  style?: StyleProp<ViewStyle>;
-};
-
-const ViewMore: React.FC<Props> = ({ style }) => {
+const ViewMore: React.FC<Props> = ({ style, onPress }) => {
   return (
-    <Container style={style}>
-      <Text>Ver mais...</Text>
-    </Container>
+    <TouchableOpacity onPress={onPress}>
+      <Container style={style}>
+        <Text>Ver mais...</Text>
+      </Container>
+    </TouchableOpacity>
   );
 }
 

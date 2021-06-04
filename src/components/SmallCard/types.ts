@@ -7,4 +7,5 @@ export interface Item {
   desc?: string;
   thumbnail?: string;
   type?: string;
+  category?: string;
 }

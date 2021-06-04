@@ -1,9 +1,9 @@
 import React from 'react';
-import { Title } from '../';
-import SmallCard from '../SmallCard';
+import { Title, SmallCard } from '../';
 import { FlatList } from 'react-native';
-import { ListStyle } from './styles';
 import { Props } from './types';
+
+import { ListStyle } from './styles';
 
 
 const HorizontalList: React.FC<Props> = ({ title, data }) => {

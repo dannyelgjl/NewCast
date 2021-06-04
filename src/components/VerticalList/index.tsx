@@ -1,25 +1,13 @@
 import React from 'react';
-import { Title, FlatCard, VerticalCard } from '../';
-import { Container, Content } from './styles';
+import { Title, VerticalCard } from '../';
+import { Props } from './types';
 
-interface Props {
-  title?: string;
-  data: {
-    id: string;
-    title: string;
-    desc: string;
-    thumbnail: string;
-    category: string;
-  }[],
-  item?: {
-    id?: string;
-  };
-}
+import { Container, Content } from './styles';
 
 const VerticalList: React.FC<Props> = ({ title, data }) => {
   return (
     <Container>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
       <Content>
         {data.map(item => <VerticalCard item={item} key={item.id} />)}
       </Content>

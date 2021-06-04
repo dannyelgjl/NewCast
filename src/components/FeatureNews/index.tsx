@@ -1,16 +1,7 @@
 import React from 'react';
-import { BlockCard, HorizontalList } from '../';
-import { StyleProp, ViewStyle } from 'react-native';
+import { BlockCard } from '../';
 import { useNavigation } from '@react-navigation/native';
-
-interface Props {
-  item: {
-    id: string,
-    title?: string;
-    desc?: string;
-    thumbnail?: string;
-  }
-}
+import { Props } from './types';
 
 const FeatureNews: React.FC<Props> = ({ item }) => {
   const { navigate } = useNavigation();

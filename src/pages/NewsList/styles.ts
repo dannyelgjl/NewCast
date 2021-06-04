@@ -9,8 +9,12 @@ export const Header = styled.View`
 `;
 
 export const CategoryTitle = styled.Text`
- font-size: 20px;
+ font-size: 30px;
  font-weight: bold;
  text-transform: uppercase;
  color: white;
+`;
+
+export const NewsScroll = styled.ScrollView`
+  padding: 15px;
 `;

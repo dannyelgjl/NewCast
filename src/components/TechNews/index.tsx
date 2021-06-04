@@ -1,17 +1,6 @@
 import React from 'react';
 import { HorizontalList } from '../';
-
-interface Props {
-  data: Data[],
-}
-
-interface Data {
-  id: string;
-  title: string;
-  desc: string;
-  thumbnail: string;
-  category: string;
-}
+import { Props } from './types';
 
 const TechNews: React.FC<Props> = ({ data }) => {
 

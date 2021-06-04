@@ -1,8 +1,10 @@
 import React from 'react';
 import { TouchableOpacity } from 'react-native';
-import { Container, ImageFeaturedNews, ContentContainer } from './styles';
 import { SubTitle, Title } from '../';
+
 import { Props } from './types';
+
+import { Container, ImageFeaturedNews, ContentContainer } from './styles';
 
 
 const BlockCard: React.FC<Props> = ({ style, imageStyle, item, onPress }) => {

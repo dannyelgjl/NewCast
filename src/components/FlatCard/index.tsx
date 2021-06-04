@@ -1,9 +1,12 @@
 import React from 'react';
-import { Container, ImageFeaturedNews, ContentContainer } from './styles';
-import { SubTitle, Title } from '../';
-import { Props } from './types';
 import { TouchableOpacity } from 'react-native';
+import { SubTitle, Title } from '../';
 import { useNavigation } from '@react-navigation/core';
+import { Props } from './types';
+
+
+import { Container, ImageFeaturedNews, ContentContainer } from './styles';
+
 
 const FlatCard: React.FC<Props> = ({ item }) => {
   const { navigate } = useNavigation();

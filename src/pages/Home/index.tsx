@@ -12,23 +12,8 @@ import {
 import { Container } from './styles';
 import data from '../../services/news';
 import { news, techNews as techNews1 } from '../../services/news';
-import { useNavigation } from '@react-navigation/native';
-
-export interface Props {
-  item?: Item;
-  onPress?(): void,
-};
-
-interface Item {
-  id?: string;
-  title?: string;
-  desc?: string;
-  thumbnail?: string;
-}
 
 const News: React.FC = () => {
-  const { navigate } = useNavigation();
-
   const breakingNews = data.filter(item => item.category === 'breaking-news');
   const techNews = data.filter(item => item.category === 'tech');
   const politicalNews = data.filter(item => item.category === 'political');

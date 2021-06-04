@@ -1,11 +1,9 @@
 import React from 'react';
+import { Props } from './types';
 
 import { Text } from './styles';
 
-interface Props {
-  numberOfLines?: number;
-  size?: number;
-}
+
 
 const Title: React.FC<Props> = ({ children, numberOfLines = 2, size = 15 }) => {
   return (
