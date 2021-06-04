@@ -11,7 +11,6 @@ export default function App() {
   return (
     <StackNavigation.Navigator
       screenOptions={{
-        headerShown: false,
         cardStyleInterpolator: ({ index, current, next, layouts: { screen } }) => {
           const translateX = current.progress.interpolate({
             inputRange: [index - 1, index, index + 1],
@@ -34,8 +33,12 @@ export default function App() {
       }}
     >
       <StackNavigation.Screen name="Home" component={Home} />
-      <StackNavigation.Screen name="Detail" component={Detail} />
-      <StackNavigation.Screen name="NewDetail" component={NewDetail} />
+      <StackNavigation.Screen
+        options={{ headerShown: false }}
+        name="Detail"
+        component={Detail}
+      />
+      <StackNavigation.Screen options={{ headerShown: false }} name="NewDetail" component={NewDetail} />
     </StackNavigation.Navigator>
   );
 }

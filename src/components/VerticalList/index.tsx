@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, FlatCard } from '../';
+import { Title, FlatCard, VerticalCard } from '../';
 import { Container, Content } from './styles';
 
 interface Props {
@@ -21,7 +21,7 @@ const VerticalList: React.FC<Props> = ({ title, data }) => {
     <Container>
       <Title>{title}</Title>
       <Content>
-        {data.map(item => <FlatCard item={item} key={item.id} />)}
+        {data.map(item => <VerticalCard item={item} key={item.id} />)}
       </Content>
     </Container>
   );
