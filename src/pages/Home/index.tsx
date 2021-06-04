@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { View, StyleSheet, Text, Button, FlatList } from 'react-native'
-import { SearchBar, FeatureNews, SmallCard, BreakingNews, TechNews } from '../../components';
+import { SearchBar, FeatureNews, SmallCard, BreakingNews, TechNews, FlatCard } from '../../components';
 import { Container } from './styles';
 import data from '../../services/news';
 
@@ -20,6 +20,13 @@ const News = () => {
       }} />
       <BreakingNews data={breakingNews} />
       <TechNews data={techNews} />
+      <FlatCard item={{
+        id: "1",
+        title: "Teste titulo 1 2 3",
+        desc:
+          "desad asd edasd deasd deasd dasda dwasdas dwasd.",
+        thumbnail: "https://i.pinimg.com/originals/70/02/6e/70026eec5353580f50ea89127ff895e7.png",
+      }} />
     </Container>
   )
 }

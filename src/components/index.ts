@@ -7,5 +7,6 @@ export { default as SmallCard } from './SmallCard';
 export { default as HorizontalList } from './HorizontalList';
 export { default as BreakingNews } from './BreakingNews';
 export { default as TechNews } from './TechNews';
+export { default as FlatCard } from './FlatCard';
 
 
