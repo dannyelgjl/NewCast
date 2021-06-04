@@ -17,7 +17,6 @@ interface Item {
 
 
 const FlatCard: React.FC<Props> = ({ item }) => {
-  console.log("ITEM", item);
   return (
     <Container>
       <ImageFeaturedNews source={{ uri: item?.thumbnail }} />

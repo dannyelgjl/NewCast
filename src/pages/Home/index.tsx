@@ -23,17 +23,15 @@ const News = () => {
   const entertainmentNews = data.filter(item => item.category === 'entertainment');
 
   return (
-    // <Container>
-    //   <SearchBar />
-    //   <FeatureNews item={news} />
-    //   <BreakingNews data={breakingNews} />
-    //   <PoliticalNews data={politicalNews} />
-    //   <TechNews data={techNews} />
-    //   <FlatCard item={techNews1} />
-    //   <EntertainmentNews data={entertainmentNews} />
-
-    // </Container>
-    <NewsList />
+    <Container>
+      <SearchBar />
+      <FeatureNews item={news} />
+      <BreakingNews data={breakingNews} />
+      <PoliticalNews data={politicalNews} />
+      <TechNews data={techNews} />
+      <FlatCard item={techNews1} />
+      <EntertainmentNews data={entertainmentNews} />
+    </Container>
   )
 }
 

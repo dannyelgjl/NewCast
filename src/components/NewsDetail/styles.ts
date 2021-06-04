@@ -19,3 +19,7 @@ export const Description = styled.Text`
   font-size: 16px;
   color: #4e4d4d;
 `;
+
+export const RelatedPost = styled.View`
+  padding: 10px;
+`;

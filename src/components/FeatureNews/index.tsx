@@ -1,10 +1,7 @@
 import React from 'react';
 import { BlockCard } from '../';
 import { StyleProp, ViewStyle } from 'react-native';
-
-const style: StyleProp<ViewStyle> = {
-  marginVertical: 15,
-}
+import { useNavigation } from '@react-navigation/native';
 
 interface Props {
   item: {
@@ -15,10 +12,15 @@ interface Props {
   }
 }
 
-
 const FeatureNews: React.FC<Props> = ({ item }) => {
+  const { navigate } = useNavigation();
+
   return (
-    <BlockCard item={item} style={{ marginVertical: 15 }} />
+    <BlockCard
+      item={item}
+      style={{ marginVertical: 15 }}
+      onPress={() => navigate('NewDetail', { item })}
+    />
   );
 }
 
