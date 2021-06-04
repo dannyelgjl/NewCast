@@ -1,13 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import { View, StyleSheet, Text, Button, FlatList } from 'react-native'
-import { SearchBar, FeatureNews, SmallCard, BreakingNews, TechNews, FlatCard } from '../../components';
+import {
+  SearchBar,
+  FeatureNews,
+  BreakingNews,
+  TechNews,
+  FlatCard,
+  PoliticalNews,
+} from '../../components';
 import { Container } from './styles';
 import data from '../../services/news';
 
 const News = () => {
 
   const breakingNews = data.filter(item => item.category === 'breaking-news');
-  const techNews = data.filter(item => item.category === 'tech')
+  const techNews = data.filter(item => item.category === 'tech');
+  const politicalNews = data.filter(item => item.category === 'political');
   return (
     <Container>
       <SearchBar />
@@ -19,6 +27,7 @@ const News = () => {
         thumbnail: "https://i.pinimg.com/originals/70/02/6e/70026eec5353580f50ea89127ff895e7.png",
       }} />
       <BreakingNews data={breakingNews} />
+      <PoliticalNews data={politicalNews} />
       <TechNews data={techNews} />
       <FlatCard item={{
         id: "4",

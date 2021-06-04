@@ -8,5 +8,7 @@ export { default as HorizontalList } from './HorizontalList';
 export { default as BreakingNews } from './BreakingNews';
 export { default as TechNews } from './TechNews';
 export { default as FlatCard } from './FlatCard';
+export { default as VerticalList } from './VerticalList';
+export { default as PoliticalNews } from './PoliticalNews';
 
 

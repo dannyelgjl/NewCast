@@ -3,5 +3,5 @@ import styled from 'styled-components/native';
 export const Container = styled.View``;
 
 export const Content = styled.View`
-  margin: 15 0;
+  margin: 15px 0;
 `;

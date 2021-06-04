@@ -39,4 +39,20 @@ export default [
     thumbnail: "https://i.pinimg.com/originals/b5/e4/b2/b5e4b2c5660807a83f1926574556ea75.jpg",
     category: "tech",  
   },
+  {
+    id: "6",
+    title: "Teste titulo 1 2 3",
+    desc: 
+      "desad asd edasd deasd deasd dasda dwasdas dwasd.",
+    thumbnail: "https://i.pinimg.com/originals/b5/e4/b2/b5e4b2c5660807a83f1926574556ea75.jpg",
+    category: "political",  
+  },
+  {
+    id: "7",
+    title: "Teste titulo 1 2 3",
+    desc: 
+      "desad asd edasd deasd deasd dasda dwasdas dwasd.",
+    thumbnail: "https://i.pinimg.com/originals/b5/e4/b2/b5e4b2c5660807a83f1926574556ea75.jpg",
+    category: "political",  
+  },
 ];
