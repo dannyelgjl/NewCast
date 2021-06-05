@@ -9,13 +9,11 @@ import {
   PoliticalNews,
   EntertainmentNews,
 } from '../../components';
-import { useNavigation } from '@react-navigation/native';
 import { Container } from './styles';
 import data from '../../services/news';
 import { news, techNews as techNews1 } from '../../services/news';
 
 const News: React.FC = () => {
-  const { navigate } = useNavigation();
 
   const breakingNews = data.filter(item => item.category === 'breaking-news').reverse();
   const techNews = data.filter(item => item.category === 'tech');
@@ -25,7 +23,6 @@ const News: React.FC = () => {
   return (
     <Container>
       <SearchBar />
-      <Button title="Criar" onPress={() => navigate('NewNews')} />
       <FeatureNews item={news} />
       <BreakingNews data={breakingNews} />
       <PoliticalNews data={politicalNews} />
