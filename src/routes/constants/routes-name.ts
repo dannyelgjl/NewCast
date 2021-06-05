@@ -1,11 +1,6 @@
-const NEWS_CAST_SCREENS = {
-  NEWS: 'News',
-};
-
-export const NAVIGATORS = {
-  NEWS_NAVIGATOR: 'NewsNavigation',
-};
-
 export const SCREENS = {
-  NEWS_SCREENS: { ...NEWS_CAST_SCREENS },
+  HOME: 'Home',
+  NEWS_DETAIL: 'NewsDetail',
+  NEWS_LIST: 'NewsList',
+  NEW_NEWS: 'NewNews',
 };

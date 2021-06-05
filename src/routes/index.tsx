@@ -1,5 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
+import { SCREENS } from './constants/routes-name';
 import Home from '../pages/Home';
 import NewsDetail from '../pages/NewsDetail';
 import NewsList from '../pages/NewsList';
@@ -46,16 +47,16 @@ export default function App() {
     >
       <StackNavigation.Screen
         options={{ headerShown: false }}
-        name="Home"
+        name={SCREENS.HOME}
         component={Home}
       />
 
       <StackNavigation.Screen
-        name="NewsDetail"
+        name={SCREENS.NEWS_DETAIL}
         component={NewsDetail}
       />
-      <StackNavigation.Screen name="NewsList" component={NewsList} />
-      <StackNavigation.Screen name="NewNews" component={NewNews} />
+      <StackNavigation.Screen name={SCREENS.NEWS_LIST} component={NewsList} />
+      <StackNavigation.Screen name={SCREENS.NEW_NEWS} component={NewNews} />
     </StackNavigation.Navigator>
   );
 }
