@@ -1,7 +1,6 @@
 import React from 'react';
 import { TouchableOpacity } from 'react-native';
 import { SubTitle, Title } from '../';
-
 import { Props } from './types';
 
 import { Container, ImageFeaturedNews, ContentContainer } from './styles';

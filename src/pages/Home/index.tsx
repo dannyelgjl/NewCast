@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { View, StyleSheet, Text, Button, FlatList } from 'react-native'
+import { Button } from 'react-native';
 import {
   SearchBar,
   FeatureNews,
@@ -9,12 +9,15 @@ import {
   PoliticalNews,
   EntertainmentNews,
 } from '../../components';
+import { useNavigation } from '@react-navigation/native';
 import { Container } from './styles';
 import data from '../../services/news';
 import { news, techNews as techNews1 } from '../../services/news';
 
 const News: React.FC = () => {
-  const breakingNews = data.filter(item => item.category === 'breaking-news');
+  const { navigate } = useNavigation();
+
+  const breakingNews = data.filter(item => item.category === 'breaking-news').reverse();
   const techNews = data.filter(item => item.category === 'tech');
   const politicalNews = data.filter(item => item.category === 'political');
   const entertainmentNews = data.filter(item => item.category === 'entertainment');
@@ -22,6 +25,7 @@ const News: React.FC = () => {
   return (
     <Container>
       <SearchBar />
+      <Button title="Criar" onPress={() => navigate('NewNews')} />
       <FeatureNews item={news} />
       <BreakingNews data={breakingNews} />
       <PoliticalNews data={politicalNews} />
@@ -29,7 +33,7 @@ const News: React.FC = () => {
       <FlatCard item={techNews1} />
       <EntertainmentNews data={entertainmentNews} />
     </Container>
-  )
-}
+  );
+};
 
 export default News

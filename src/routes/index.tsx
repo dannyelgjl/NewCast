@@ -2,7 +2,8 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../pages/Home';
 import NewsDetail from '../pages/NewsDetail';
-import NewsList from '../pages/NewsList'
+import NewsList from '../pages/NewsList';
+import NewNews from '../pages/NewNews';
 
 const StackNavigation = createStackNavigator();
 
@@ -54,6 +55,7 @@ export default function App() {
         component={NewsDetail}
       />
       <StackNavigation.Screen name="NewsList" component={NewsList} />
+      <StackNavigation.Screen name="NewNews" component={NewNews} />
     </StackNavigation.Navigator>
   );
 }

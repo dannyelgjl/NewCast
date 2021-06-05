@@ -4,7 +4,6 @@ import { SubTitle, Title } from '../';
 import { useNavigation } from '@react-navigation/core';
 import { Props } from './types';
 
-
 import { Container, ImageFeaturedNews, ContentContainer } from './styles';
 
 
