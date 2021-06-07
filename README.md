@@ -6,16 +6,16 @@
   🚀 Noticiário
 </h4>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/dannyelgjl/NewCast">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/dannyelgjl/News">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/dannyelgjl/NewCast">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/dannyelgjl/News">
   
-  <a href="https://github.com/dannyelgjl/NewCast/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/dannyelgjl/NewCast">
+  <a href="https://github.com/dannyelgjl/News/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/dannyelgjl/News">
   </a>
 
-  <a href="https://github.com/dannyelgjl/NewCast/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/dannyelgjl/NewCast">
+  <a href="https://github.com/dannyelgjl/News/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/dannyelgjl/News">
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
@@ -51,11 +51,18 @@ Esse projeto foi desenvolvido com a seguinte tecnologia:
 
 ## 💻 Projeto
 
-O NewCast é um projeto que visa conectar pessoas que estão buscando se manter informadas com as melhores notícias do momento.
+O News é um projeto que visa conectar pessoas que estão buscando se manter informadas com as melhores notícias do momento.
+
+## 💻 Start
+
+Passo 1: Utilize o comando `yarn install || só yarn` para instalar as dependências do projeto;
+Passo 2: Utilize o comando `yarn android` para inicializar o metro bundler e startar o App no seu emulador(;
+
+Obs: Não consegui desenvolver a parte `IOS`, pois meu mac está no suporte trocando alguns componentes; 
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através do [Figma](https://www.figma.com/file/SJ2mgqzpIUH22u3aqHqSnl/NewCast?node-id=0%3A1).
+Você pode visualizar o layout do projeto através do [Figma](https://www.figma.com/file/SJ2mgqzpIUH22u3aqHqSnl/News?node-id=0%3A1).
 
 ## 🤔 Como contribuir
 
