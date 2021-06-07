@@ -66,6 +66,11 @@ Você pode visualizar o layout do projeto através do [Figma](https://www.figma.
 
 Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
 
+## 🤯 Observações
+
+Devido a correria do trabalho não tive muito tempo para finalizar o desafio 100%, mas dei meu melhor e espero que gostem. 😊 
+
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
