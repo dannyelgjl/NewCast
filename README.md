@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="NewCast" title="#newcast" src=".github/NewCast.svg" width="250px" />
+    <img alt="NewCast" title="#newcast" src=".github/News.svg" width="250px" />
 </h1>
 
 <h4 align="center">
