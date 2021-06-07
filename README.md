@@ -36,6 +36,10 @@
 </p>
 
 <p align="center">
+  <img alt="Frontend" src=".github/Component3.png" width="100%">
+</p>
+
+<p align="center">
   <img alt="Frontend" src=".github/Component2.png" width="100%">
 </p>
 
