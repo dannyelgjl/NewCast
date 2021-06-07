@@ -55,8 +55,9 @@ O News é um projeto que visa conectar pessoas que estão buscando se manter inf
 
 ## 💻 Start
 
-Passo 1: Utilize o comando `yarn install || só yarn` para instalar as dependências do projeto;
-Passo 2: Utilize o comando `yarn android` para inicializar o metro bundler e startar o App no seu emulador(;
+- Passo 1: Utilize o comando `yarn install || só yarn` para instalar as dependências do projeto;
+
+- Passo 2: Utilize o comando `yarn android` para inicializar o metro bundler e startar o App no seu emulador;
 
 Obs: Não consegui desenvolver a parte `IOS`, pois meu mac está no suporte trocando alguns componentes; 
 
